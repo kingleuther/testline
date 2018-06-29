@@ -9,6 +9,10 @@ const config = {
 
 const client = new line.Client(config);
 
+app.get('/', function(req, res){
+    res.send('oh my gad! you are so effin great!');
+});
+
 app.get('/test', function(req, resp){
     var message = '';
     client.pushMessage('tmjpofficial', message)
